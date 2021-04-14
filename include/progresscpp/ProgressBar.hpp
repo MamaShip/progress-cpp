@@ -29,7 +29,7 @@ public:
 
   void display() const {
     float progress = (float)ticks / total_ticks;
-    int pos = (int)(bar_width * progress);
+    unsigned int pos = (unsigned int)(bar_width * progress);
 
     std::chrono::steady_clock::time_point now =
         std::chrono::steady_clock::now();
